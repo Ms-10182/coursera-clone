@@ -1,0 +1,49 @@
+.course-display {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px; /* Adds space below the section */
+}
+
+
+.course {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Space between courses */
+    border-bottom: 1px solid #ccc; /* Optional separator */
+    padding-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.course:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.course-image {
+    width: 100px; /* Fixed width, adjust as needed */
+    height: auto;
+    margin-right: 20px; /* Space between the image and info */
+}
+
+.course-info {
+    flex-grow: 1; /* Allows this div to take up remaining space */
+    padding-right: 20px; /* Keeps text from touching the download button */
+}
+
+.download-button {
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}

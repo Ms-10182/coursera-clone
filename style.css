@@ -1,0 +1,125 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container,
+.profile-section {
+    display: flex;
+    align-items: center;
+}
+
+.header-container > span,
+.profile-section > div > span,
+.search-box > span {
+    margin-right: 10px;
+}
+
+/* Search box styling */
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ensure it takes the full width within its container */
+}
+
+#search-input {
+    flex-grow: 1; /* Ensures the input expands to fill available space */
+    padding: 10px 5px 10px 40px; /* Increase left padding to avoid text overlapping the logo */
+    border: 2px solid #ababab;
+    border-radius: 20px; /* Makes the edges round */
+    background-image: url('./icons/C_logo.png'); /* Ensure this path is correct */
+    background-position: 10px center; /* Position the logo inside the padding area */
+    background-repeat: no-repeat;
+    background-size: 20px; /* Ensures the logo fits well within the padding */
+    margin-right: 10px; /* Space between input and button */
+}
+
+
+.search-box button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dropdown styles */
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: #333;
+}
+
+/* Notification and Profile icons */
+.notification-area button,
+.profile > span {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* General button styling */
+button {
+    background-color: white;
+    color: white;
+    border: solid 1px #96bee9;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #333;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Page options and content area */
+.page-options,
+.content {
+    padding: 20px;
+    background-color: #f8f9fa; /* Background for page options only */
+}
+
+.heading h2,
+.result-options {
+    color: #333; /* Ensure consistent text color */
+}
+
+.result-options {
+    margin-top: 20px;
+}
+
+.logo {
+    margin-right: 10px; /* Adjust the right margin as needed */
+    margin-left: 20px;
+    width: auto;
+}
+
+/* Remove margin from the last logo if needed */
+.logo:last-child {
+    margin-right: 0;
+}
+
+.catogery {
+    color: white;
+    background-color: #007BFF;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="course-display.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+                <img src="./icons/C_logo.png" alt="Switch Logo" class="logo">
+                <img src="./icons/cu-logo.png" alt="CU Logo" class="logo">
+            <div class="search-box">
+                <input type="text" placeholder="Search courses" id="search-input">
+                <button id="search">search</button>
+            </div>
+        </div>
+        <div class="profile-section">
+            <div class="language">
+                <select name="language" id="language" >
+                    <option selected>English</option>
+                    <option>Spanish</option>
+                    <option>French</option>
+                    <option>German</option>
+                    <option>Italian</option>
+                </select>
+            </div>
+            <div class="notification-area">
+                <button id="notification" class="logo" >
+                    <i class="fas fa-bell"></i>
+                </button>
+                
+            </div>
+
+            <div class="profile">
+                <span>Mayank</span>
+
+                <select name="profile-options" id="profile-options">
+                    <option value="profile">profile</option>
+                    <option value="Purchase">Purchase</option>
+                    <option value="Settings">Settings</option>
+                    <option value="Updates">Updates</option>
+                    <option value="Log-out">Log Out</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <div class="page-options">
+        <button id="Home" class ="catogery" style="color: black; background-color: white;">Home</button>
+        <button id="my-learning" class ="catogery">My learning</button>
+    </div>
+    <div class="content">
+        <div class="heading">
+            <h2>My Learning</h2>
+        </div>
+        <div class="result-options">
+            <button id="Completed" style="color: white; background-color:#0056b3 ;">Completed</button>
+            <button id="In progress">In progress</button>
+            <button id="Saved">Saved</button>
+            <button id="Starting Later">Starting Later</button>
+            <button class="reset-certificate-button" onclick="resetCertificate()">Reset My Certificate</button>
+
+
+        </div>
+        <div class="course-display">
+            <div class="course">
+                <img src="./icons/SQL_image.png" alt="Course Image" class="course-image">
+                <div class="course-info">
+                    <h3>Databases and SQL for Data Science with Python</h3>
+                    <p>Organization: IBM</p>
+                    <p>Completion Status: Completed</p>
+                </div>
+                <button class="download-button">Download</button>
+            </div>
+            <div class="course">
+                <img src="./icons/Querying-Databases-with-SQL.png" alt="Course Image" class="course-image">
+                <div class="course-info">
+                    <h3>SQL: A Practical Introduction for Querying Databases</h3>
+                    <p>Organization: IBM</p>
+                    <p>Completion Status: Completed</p>
+                </div>
+                <button class="download-button">Download</button>
+            </div>
+            <div class="course">
+                <img src="./icons/DBA1.png" alt="Course Image" class="course-image">
+                <div class="course-info">
+                    <h3>Introduction to Databases</h3>
+                    <p>Organization: Meta</p>
+                    <p>Completion Status: Completed</p>
+                </div>
+                <button class="download-button">Download</button>
+            </div>
+            <!-- Add more .course divs for each course -->
+        </div>
+        
+        
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="contract.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+
+</body>
+</html>

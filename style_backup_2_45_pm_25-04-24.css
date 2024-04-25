@@ -1,0 +1,127 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Optional background color */
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container,
+.profile-section {
+    display: flex;
+    align-items: center;
+}
+
+.header-container > span,
+.profile-section > div > span,
+.search-box > span {
+    margin-right: 10px;
+}
+
+.search-box {
+    position: relative; /* Maintain this for the positioning of any absolute elements inside, like an icon */
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Makes the search box expand as needed, assuming you want it to fill the available space in the header */
+}
+
+.search-box input[type="text"] {
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dropdown styles */
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: #333;
+}
+
+/* Notification and Profile icons */
+.notification-area button,
+.profile > span {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* General button styling */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Page options below the header */
+.page-options {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* Content area styling */
+.content {
+    padding: 20px;
+}
+
+.heading h2 {
+    color: #333;
+}
+
+.result-options {
+    margin-top: 20px;
+}
+
+
+
+#search-input {
+    flex-grow: 1;
+    padding-left: 35px; /* Ensuring logo doesn't overlap */
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-image: url('./icons/C_logo.png');
+    background-position: left 10px center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.search-box button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

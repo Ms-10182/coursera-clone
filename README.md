@@ -22,5 +22,5 @@ Interaction
 2) click the download button. connect the metamask and approve the tranasction. As any URI is not specified so NFT in image form is currently unavailable. but it will be stored in mapping of contract.
 If there is already an certificate then it will throw and error.
 NOTE- for development and testing , reset button is availble to delete the NFT.<br>
-Authors
+Authors<br>
 [@Mayank Sharma](https://www.linkedin.com/in/mayank-sharma-078278243/)
